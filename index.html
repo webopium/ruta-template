@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RutaDate</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="css/sprite.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/jquery.formstyler.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/mainscript.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="container">
+					<div class="navigation">
+						<div class="logo">
+							<a href="/rutadate" class="logo__link"></a>
+						</div>
+						<div class="nav-wrap">
+							<div class="authorization-btn" >
+								<a href="login.php" class="login-btn__link">
+									Login
+								</a>
+								<a href="#" class="logout-btn__link">
+									Logout
+								</a>
+							</div>
+							<div class="mobile-nav-btn">
+								<a href="#" class="mobile-nav-btn__link mobile-nav-btn__link_js">
+									Menu
+								</a>
+							</div>
+							<div class="nav-list">
+								<a href="#" class="nav-list__link active">
+									Home
+								</a>
+								<a href="ladies-gallery.php" class="nav-list__link">
+									Ladies Gallery
+								</a>
+								<a href="search.php" class="nav-list__link">
+									Search
+								</a>
+								<a href="blog.php" class="nav-list__link">
+									Blog
+								</a>
+								<a href="support.php" class="nav-list__link">
+									Support
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content index-content">
+				<div class="index-banner">
+					<div class="index-banner-wrap">
+						<div class="index-banner__image">
+							<div class="index-banner-info">
+								<div class="index-banner-info__title">
+									<b>Register now</b> and find your <span>love</span> 
+								</div>
+								<div class="index-banner-info-btns">
+									<div class="index-banner-info-btns-registration">
+										<a href="myprofile.php" class="index-banner-info-btns-registration__link first-btn">
+											Join for free
+										</a>
+									</div>
+									or
+									<div class="index-banner-info-btns-authorization-fb">
+										<a href="#" class="index-banner-info-btns-authorization-fb__link">
+											Login
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="index-search">
+							<div class="index-search__title">
+								Search:
+							</div>
+							<div class="index-search-block">
+								<div class="index-search-block-gender-wrap">
+									<div class="index-search-block-gender">
+										<label>I am</label>
+										<select class="index-search-block__select index-search-block-gender__select">
+											<option>man</option>
+											<option>women</option>
+										</select>
+									</div>
+									<div class="index-search-block-gender">
+										<label>seeking</label>
+										<select class="index-search-block__select index-search-block-gender__select">
+											<option>women</option>
+											<option>man</option>
+										</select>
+									</div>
+								</div>
+								<div class="index-search-block-age-wrap">
+									<div class="index-search-block-age">
+										<label>age from</label>
+										<select class="index-search-block__select index-search-block-age__select">
+											<option></option>
+											<option>18</option>
+											<option>20</option>
+										</select>
+									</div>
+									<div class="index-search-block-age">
+										<label>to</label>
+										<select class="index-search-block__select index-search-block-age__select">
+											<option></option>
+											<option>18</option>
+											<option>20</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="index-search-btn">
+								<a href="#" class="index-search-btn__link  first-btn">
+									Search now
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ladies-wrapper index-ladies-wrapper">
+					<div class="container">
+						<div class="index-ladies__title">
+							<span>Online now</span>
+							<hr>
+						</div>
+						<div class="ladies-list index-ladies-list">
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status">
+										Offline
+									</div>
+									<div class="ladies-webcam">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status">
+										Offline
+									</div>
+									<div class="ladies-webcam">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status">
+										Offline
+									</div>
+									<div class="ladies-webcam">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+							<div class="ladies-block">
+								<div class="ladies-photo">
+									<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+								</div>
+								<div class="ladies-function">
+									<div class="ladies-status ladies-status_online">
+										Online
+									</div>
+									<div class="ladies-webcam ladies-webcam-online">
+										<a href="#" class="ladies-webcam__link">
+											Start live videochat
+										</a>
+									</div>
+									<div class="ladies-message">
+										<a href="#" class="ladies-message__link">
+											Write new message
+										</a>
+									</div>
+									<div class="ladies-videoclip">
+										<a href="#" class="ladies-videoclip__link">
+											Video clips
+										</a>
+									</div>
+								</div>
+								<div class="ladies-info">
+									<div class="ladies-name">
+										Svetlana
+									</div>
+									<div class="ladies-age">
+										25
+									</div>
+									<hr class="clear">
+									<div class="ladies-id">
+										User ID: <span>179918</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="index-ladies-btn">
+							<a href="#" class="index-ladies-btn__link first-btn">
+								Look for more ladies
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="info-banners index-info-banners">
+					<div class="container">
+						<div class="info-banner info-banner-webcam">
+							<div class="info-banner__icon"></div>
+							<div class="info-banner__text">
+								ENJOY CHATTING WITH OUR BEAUTIFUL RUSSIAN BRIDES AND UKRAINIAN WOMEN!
+							</div>
+						</div>
+						<div class="info-banner info-banner-message">
+							<div class="info-banner__icon"></div>
+							<div class="info-banner__text">	
+								WRITE LOVELY LETTERS TO YOUR FUTURE RUSSIAN WIFE.
+							</div>
+						</div>
+						<div class="info-banner info-banner-videoclip">
+							<div class="info-banner__icon"></div>
+							<div class="info-banner__text">
+								WATCH THE BEST VIDEOS SELECTED BY OUR RUSSIAN DATING SERVICE!
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-blocks index-info-blocks">
+					<div class="container">
+						<div class="info-block">
+							<div class="info-block__title left">
+								<b>TRADITIONAL</b>
+								 UKRAINIAN<br> DATING
+							</div>
+							<div class="info-block__text right">
+								<p>
+									Welcome to RutaDate.com, the site where you'll find your love. We gathered the most beautiful, loving and caring single ladies from Ukraine under one roof with men from all over the world to help them find their soulmates. 
+									Your happiness is our job. We are aimed to create serious and long lasting relationships and strong families. 
+								</p>
+								<p>
+									We respect traditional family values and use modern technologies to help love break the distance. Better to see once than to hear 100 times - use our Videochat service for interactive communication with your beloved one.
+								</p>
+								<p>
+									Join our fast-growing community today - the sooner you start the sooner you'll find your perfect match.
+								</p>
+								<p>
+									We carefully select ladies for our database, request copies of their documents and interview our ladies before allowing them to register on the site. We are doing a lot of work to keep scammers and fake profiles off the site. All women at this site have been consulted by our specialists, each lady is motivated for serious relationships. 
+								</p>
+							</div>
+						</div>
+						<hr>
+						<div class="info-block">
+							<div class="info-block__title right">
+								MEETING <br>A LADY <br>
+								<b>IS A KEY</b>
+							</div>
+							<div class="info-block__text left">
+								<p>
+									Tired of communicating online for years? It's time to take your relationship to the next level - meeting a lady is a key! The best way to get to know your potential wife is to meet her in person. You'll be assisted by our professional team, we'll take care of everything to ensure you'll have the best experience of your lifetime.
+								</p>
+								<p>
+									Our Romantic Tour service is meant to be used only by those who are truly searching for serious, long-term relationships. During the Romance Tour you will meet the lady that you corresponded with, it will be a serious step in your mutual relationship. Our beautiful single ladies still believe in romance and are looking for true love.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="footer">
+				<div class="container">
+					<div class="footer-info">
+						<div class="footer-info-block">
+							<div class="footer-logo">
+								<a href="/" class="footer-logo__link"></a>
+							</div>
+							<div class="footer-secure"></div>
+						</div>
+						<div class="footer-info-block">
+							<div class="footer-info-block__title">
+								SERVICE AND SUPPORT
+							</div>
+							<div class="footer-info-block-list">
+								<a href="#" class="footer-info-block-list__link">
+									Terms and Conditions
+								</a>
+								<a href="#" class="footer-info-block-list__link">
+									Privacy policy
+								</a>
+								<a href="#" class="footer-info-block-list__link">
+									Billing issues
+								</a>
+							</div>
+						</div>
+						<div class="footer-info-block">
+							<div class="footer-info-block__title">
+								SERVICE AND SUPPORT
+							</div>
+							<div class="footer-info-block-list">
+								<a href="#" class="footer-info-block-list__link">
+									Home
+								</a>
+								<a href="#" class="footer-info-block-list__link">
+									Gallery
+								</a>
+								<a href="#" class="footer-info-block-list__link">
+									Search
+								</a>
+								<a href="#" class="footer-info-block-list__link">
+									Blog
+								</a>
+								<a href="#" class="footer-info-block-list__link">
+									Support
+								</a>
+							</div>
+						</div>
+						<div class="footer-info-block">
+							<div class="footer-registration-btn">
+								<a href="#" class="footer-registration-btn__link first-btn">
+									Join for free
+								</a>
+							</div>
+							<div class="footer-girl-statisic">
+								<span>25 920</span><br>
+								beautiful women on website
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container">
+						© RutaDate 2016. All rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="chat-invite">
+			<div class="chat-invite-wrap">
+				<div class="chat-invite-popup">
+					<div class="chat-invite-popup-option">
+						<div class="chat-invite-popup-option-show"></div>
+						<div class="chat-invite-popup-option-hide"></div>
+					</div>
+					<div class="chat-invite-ladies">
+						<div class="ladies-block">
+							<div class="ladies-photo">
+								<img class="ladies-photo__img" src="img/ladies-photo.png"/>
+							</div>
+							<div class="ladies-info">
+								<div class="ladies-name">
+									Svetlana
+								</div>
+								<div class="ladies-age">
+									25
+								</div>
+								<hr class="clear">
+								<div class="ladies-id">
+									User ID: <span>179918</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="chat-invite-btn">
+						<div class="videochat-btn">
+							<a href="#" class="videochat-btn__link">
+								Start live videochat
+							</a>
+						</div>
+					</div>
+					<div class="chat-invite-timer">
+						<div class="popup-time-line">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="chat-invite-option">
+				<div class="chat-invite-option-count">1</div>
+				<div class="chat-invite-option-btn">
+					<div class="chat-invite-option-show"></div>
+					<div class="chat-invite-option-hide"></div>
+				</div>
+			</div>
+		</div>
+		<div class="search-message-popup">
+			<div class="search-message-popup-wrap">
+				<div class="search-message-popup__title">
+					Search message
+				</div>
+				<form action="" method="" class="search-message-popup__form">
+					<div class="search-message-popup__form-item">
+						<input type="text" name="" placeholder="User ID">
+					</div>
+					<div class="search-message-popup__form-item">
+						<input type="text" name="" placeholder="Date from" class="datepicker">
+					</div>
+					<div class="search-message-popup__form-item">
+						<input type="text" name="" placeholder="Date to" class="datepicker">
+					</div>
+					<div class="search-message-popup__form-item">
+						<label>
+							Only read
+						</label>
+						<select>
+							<option>-</option>
+							<option>yes</option>
+							<option>no</option>
+						</select>
+					</div>
+					<div class="search-message-popup__form-item">
+						<label>
+							Only answered
+						</label>
+						<select>
+							<option>-</option>
+							<option>yes</option>
+							<option>no</option>
+						</select>
+					</div>
+					<div class="search-message-popup__form-item">
+						<input type="reset" name="" value="Clear search" class="third-btn">
+						<input type="submit" name="" value="Search" class="second-btn">
+					</div>
+				</form>
+			</div>
+			<div class="search-message-close"></div>
+		</div>
+		<div class="show-interests-popup">
+			<div class="show-interests-popup-wrap">
+				<form action="" method="" class="show-interests-form">
+					<div class="show-interests-form-wrap">
+						<div class="show-interests-item">
+							<input type="radio" name="" class="show-interests-item__input">
+							<label class="show-interests-item__label">
+								Lets be friends!
+							</label>
+						</div>
+						<div class="show-interests-item">
+							<input type="radio" name="" class="show-interests-item__input">
+							<label class="show-interests-item__label">
+								I want to exchange letters with you!
+							</label>
+						</div>
+						<div class="show-interests-item">
+							<input type="radio" name="" class="show-interests-item__input">
+							<label class="show-interests-item__label">
+								I like you!
+							</label>
+						</div>
+						<div class="show-interests-item">
+							<input type="radio" name="" class="show-interests-item__input">
+							<label class="show-interests-item__label">
+								I love you!
+							</label>
+						</div>
+						<div class="show-interests-item">
+							<input type="radio" name="" class="show-interests-item__input">
+							<label class="show-interests-item__label">
+								I'd like to know you
+							</label>
+						</div>
+					</div>
+					<input type="submit" name="" class="second-btn" value="show you interest">
+				</form>
+			</div>
+			<div class="show-interests-popup-close"></div>
+		</div>
+	</body>
+</html>
